@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context=".LoginActivity">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="16dp"
+            android:text="Edit Materi"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="16dp"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <EditText
+                    android:id="@+id/edit_jenis"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:hint="Masukkan Jenis"
+                    android:inputType="text"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_judul"
+                    android:hint="Masukkan Judul"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:textSize="16dp"
+                    android:inputType="text"/>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!--        <RelativeLayout-->
+        <!--            android:id="@+id/layoutPicture"-->
+        <!--            android:layout_width="94dp"-->
+        <!--            android:layout_height="80dp"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_centerHorizontal="true"-->
+        <!--            android:layout_marginTop="20dp">-->
+
+        <!--            <de.hdodenhof.circleimageview.CircleImageView-->
+        <!--                android:id="@+id/picture"-->
+        <!--                android:layout_width="400dp"-->
+        <!--                android:layout_height="80dp"-->
+        <!--                android:layout_alignParentStart="true"-->
+        <!--                android:layout_alignParentBottom="true"-->
+        <!--                android:layout_marginStart="18dp"-->
+        <!--                android:layout_marginBottom="2dp"-->
+        <!--                android:src="@drawable/add_image" />-->
+
+        <!--            <android.support.design.widget.FloatingActionButton-->
+        <!--                android:id="@+id/fabChoosePic"-->
+        <!--                android:layout_width="40dp"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:layout_alignParentRight="true"-->
+        <!--                android:layout_alignParentBottom="true"-->
+        <!--                android:layout_marginRight="4dp"-->
+        <!--                android:layout_marginBottom="4dp"-->
+        <!--                app:fabSize="mini"-->
+        <!--                app:srcCompat="@drawable/add"-->
+        <!--                tools:ignore="VectorDrawableCompat" />-->
+        <!--        </RelativeLayout>-->
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="3dp"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/edit_materi"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:hint="Masukan materi"
+                    android:inputType="text"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="150dp"
+                android:background="@drawable/ic_edit" />
+
+            <Button
+                android:id="@+id/btn_hapus"
+                android:layout_width="42dp"
+                android:layout_height="38dp"
+                android:layout_marginLeft="190dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="200dp"
+                android:background="@drawable/ic_delete" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
